@@ -57,16 +57,25 @@ console.log(countProps(obj1))
 
 
 
-function copyObj(object) {          // 7 Copy object
+// function copyObj(object) {          // 7 Copy object
+//     const newObj = {}
+//     for (const key in object) {
+//         newObj[key] = key
+//         newObj[key] = object[key]
+//     }
+//     return newObj
+// }
+
+function copyObj(object) {         
     const newObj = {}
     for (const key in object) {
-        newObj[key] = key
-        newObj[key] = object[key]
+        if (object.hasOwnProperty(key)) {
+            newObj[key] = key
+        }
     }
     return newObj
 }
 const result = copyObj(obj1)
-console.log(result)
 
 
 
