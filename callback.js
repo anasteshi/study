@@ -94,3 +94,20 @@ promise.resolve(5)
 Array.prototype
 
 const p = Object.create(promise) // a child of promise object
+
+
+
+// const validate = (hasAccess) => {
+//     if (hasAccess) {
+//         return () => console.log("Access approved")
+//     }
+//     else {
+//         return () => console.log("Access denied")
+//     }
+// }
+
+const validate = (hasAccess) => hasAccess
+    ? () => console.log("Access approved")
+    :  () => console.log("Access denied")
+const logMessage = validate(true) 
+logMessage()
