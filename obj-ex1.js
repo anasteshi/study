@@ -75,7 +75,10 @@ console.log(countProps(obj1))
 //     return newObj
 // }
 
-const result = Object.assign({}, obj1)
+// const result = Object.assign({}, obj1)
+
+const result = { ...obj1} // ... spread operator
+
 console.log(result)
 
 
