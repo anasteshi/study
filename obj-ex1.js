@@ -60,23 +60,23 @@ console.log(countProps(obj1))
 // function copyObj(object) {          // 7 Copy object
 //     const newObj = {}
 //     for (const key in object) {
-//         newObj[key] = key
 //         newObj[key] = object[key]
 //     }
 //     return newObj
 // }
 
-function copyObj(object) {         
-    const newObj = {}
-    for (const key in object) {
-        if (object.hasOwnProperty(key)) {
-            newObj[key] = key
-        }
-    }
-    return newObj
-}
-const result = copyObj(obj1)
+// function copyObj(object) {         
+//     const newObj = {}
+//     for (const key in object) {
+//         if (object.hasOwnProperty(key)) {
+//             newObj[key] = key
+//         }
+//     }
+//     return newObj
+// }
 
+const result = Object.assign({}, obj1)
+console.log(result)
 
 
 const products = [                  // 8 Array of objects
