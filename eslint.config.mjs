@@ -11,7 +11,6 @@ export default defineConfig([
 			"arrow-body-style": ["error", "as-needed"],
 			"no-unused-vars": "off",
 			quotes: ["warn", "double"],
-			indent: ["error", "tab"],
 		},
 	},
 	{
