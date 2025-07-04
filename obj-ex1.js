@@ -124,9 +124,9 @@ const people = [                    // 9 Group properties
 ]
 function groupByCity(users) {
     const grouped = {}
-    for (const user in users) {
-        const city = users[user].city
-        const name = users[user].name
+    for (const index in users) {
+        const city = users[index].city
+        const name = users[index].name
         if (!grouped[city]) {
             grouped[city] = []
         }
@@ -134,4 +134,7 @@ function groupByCity(users) {
     }
     return grouped
 }
+
+console.log(Object.groupBy(people, user => user.city)) // Group objects by property 
+
 console.log(groupByCity(people))
