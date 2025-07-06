@@ -29,12 +29,12 @@ function applyForEach(callback, array) {
 }
 applyForEach(triple, array)
 
-ar42 = []
+let ar42 = []
 function write42At(i) {
     ar42[i] = 42
 }
-applyForEach(write42At, array) // array  [undefined, undefined, undefined], because write42At() doesn't return any value
-ar42 /* [empty × 9, 42, empty × 8, 42, empty × 8, 42]
+applyForEach(write42At, array) // array [undefined, undefined, undefined], because write42At() doesn't return any value
+console.log(ar42) /* [empty × 9, 42, empty × 8, 42, empty × 8, 42]
 9: 42
 18: 42
 27: 42
