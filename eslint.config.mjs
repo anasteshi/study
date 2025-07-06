@@ -11,6 +11,7 @@ export default defineConfig([
 			"arrow-body-style": ["error", "as-needed"],
 			"no-unused-vars": "off",
 			quotes: ["warn", "double"],
+			"no-constant-binary-expression": ["off"],
 		},
 	},
 	{
