@@ -30,8 +30,29 @@ let result = ""
                 // Solution #2
 
 
-for (let i = 0; i <= n; i++) {
-    result += "*".repeat(i) + "\n"
+// for (let i = 0; i <= n; i++) {
+//     result += "*".repeat(i) + "\n"
+// }
+
+// console.log(result)
+
+
+/*
+                ******
+                *****
+                ****
+                ***
+                **
+                *
+*/
+
+
+for (let i = 1; i <= n; i++) {
+	for (let j = i; j <= n; j++) {
+		result += "*"
+	}
+
+	result += "\n"
 }
 
 console.log(result)
