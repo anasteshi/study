@@ -12,7 +12,7 @@ let result = ""
 
 // console.log(result)
 
-for (let i = 0; i < n; i++) {
+for (let i = 0; i <= n; i++) {
     result += "*".repeat(i) + "\n"
 }
 
