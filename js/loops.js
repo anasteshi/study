@@ -68,9 +68,30 @@ let result = ""
 */
 
 
-for (let i = 1; i <= n; i++) {
-	for (let j = 1; j <= n; j++) {
-		result += j <= n - i ? " ": "*"
+// for (let i = 1; i <= n; i++) {
+// 	for (let j = 1; j <= n; j++) {
+// 		result += j <= n - i ? " ": "*"
+// 	}
+
+// 	result += "\n"
+// }
+
+// console.log(result)
+
+
+/*
+                ******
+                 *****
+                  ****
+                   ***
+                    **
+                     *
+*/
+
+
+for (let i = 0; i < n; i++) {
+	for (let j = n; j > 0; j--) {
+		result += j > n - i ? " ": "*"
 	}
 
 	result += "\n"
