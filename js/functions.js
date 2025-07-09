@@ -38,6 +38,7 @@ makeHappy()
     Just like function expression, arrow functions cannot be used before their declaration.
     Doesn't have access to 'arguments' special array-like object.
     No need to explicitly use return if the function was declared in one line.
+    Doesn't work with 'this' keyword.
 */
 
 const addNumbers = (a, b) => {
