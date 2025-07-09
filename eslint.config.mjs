@@ -12,6 +12,7 @@ export default defineConfig([
 			"no-unused-vars": "off",
 			quotes: ["warn", "double"],
 			"no-constant-binary-expression": ["off"],
+			"no-redeclare": "warn",
 		},
 	},
 	{
