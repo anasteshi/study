@@ -50,6 +50,7 @@ const firstName = "Anastasiia"
 const text = "SoMe teXT"
 const textWithSpaces = "   So Many sPACes   "
 const message = "Are you open minded?"
+const string = "JavaScript"
 
 console.log(firstName.length) // 10
 console.log(firstName[2]) // a
@@ -74,3 +75,12 @@ console.log(message.indexOf("open mind", 3)) // 8
 console.log(message.includes("open", 14)) // false – starts from 14th index character
 console.log(message.startsWith("ed", 2)) // false
 console.log(message.endsWith("?", 1)) // false, because the second optional parameter becomes a new ending index
+
+console.log(string.substring(0, 4)) // Java
+console.log(string.substring(4)) // Script
+
+console.log(string.slice(4)) // Script
+console.log(string.slice(-6)) // Script
+console.log(string.slice(-6, -3)) // Scr
+
+console.log(string.repeat(3)) // JavaScriptJavaScriptJavaScript
