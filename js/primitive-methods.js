@@ -101,3 +101,14 @@ console.log(message.split("")) /* [
 'e', 'n', ' ', 'm', 'i',
 'n', 'd', 'e', 'd', '?'
 ] */
+
+// Exercise: validate user input
+
+const value = prompt("Enter your name, please: ", "")
+const clearValue = value.trim().toLowerCase()
+
+if (clearValue.length < 3 || clearValue.length > 20) 
+    alert("Invalid name!")
+
+if (clearValue.includes("admin")) 
+    alert("This name cannot be used.")
