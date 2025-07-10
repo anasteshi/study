@@ -48,6 +48,8 @@ console.log(parseFloat(number2String)) // 256.5
 
 const firstName = "Anastasiia"
 const text = "SoMe teXT"
+const textWithSpaces = "   So Many sPACes   "
+const message = "Are you open minded?"
 
 console.log(firstName.length) // 10
 console.log(firstName[2]) // a
@@ -56,3 +58,7 @@ console.log(firstName.at(-2)) // i
 console.log(text.toLowerCase()) // some text
 console.log(text.toUpperCase()) // SOME TEXT
 
+console.log(textWithSpaces.trim()) // So Many sPACes
+console.log(textWithSpaces.toLowerCase().trim()) // so many spaces
+console.log(textWithSpaces.trimStart()) // 'So Many sPACes   '
+console.log(textWithSpaces.trimEnd()) // '   So Many sPACes'
