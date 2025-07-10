@@ -3,6 +3,8 @@ const array1 = ["Apple", true, 1.5]
 const array2 = []
 const array3 = [...array1] 
 const array4 = array1.slice() // Returns a copy of a section of the array
+const combined1 = [...array1, ...array2, ...array3, ...array4]
+const combined2 = array1.concat(array4) // Combines two or more arrays
 const message = "One, Two, Three, Four, Five, Six"
 
 letters.push("E", "F") // Adds elements to the end of the array
@@ -30,3 +32,7 @@ array2[0] = "Peach"
 console.log(array1)
 console.log(array2)
 console.log(array3)
+console.log(array4)
+
+console.log(combined1)
+console.log(combined2)
