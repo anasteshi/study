@@ -7,6 +7,7 @@ const person1 = {
 		language: "French",
 		sport: "tennis",
 	},
+	favAnimal: "dog",
 }
 
 const person2 = {
@@ -17,6 +18,7 @@ const person2 = {
 		language: "French",
 		sport: "tennis",
 	},
+	favAnimal: "cat",
 }
 
 function compareObjects(object1, object2) {
@@ -28,8 +30,9 @@ function compareObjects(object1, object2) {
 		const value2 = object2[key]
 
 		if (typeof value1 === "object" && typeof value2 === "object")
-			return compareObjects(value1, value2) // return is necessary, because the next line compares values, so if values are objects, compareObjects() returns false even if objects are basically identical
-
+			if (compareObjects(value1, value2)) {
+				continue
+			} else return false // return is necessary, because the next line compares values, so if values are objects, compareObjects() returns false even if objects are basically identical
 		if (value1 !== value2) return false
 	}
 	return true
