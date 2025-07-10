@@ -6,3 +6,6 @@ console.log("Round to 4 digits: ", price.toFixed(4))
 
 console.log(4..toFixed(3))
 console.log((4.555).toFixed(2))
+
+console.log(price.toPrecision(4))
+console.log(price.toPrecision(3))
