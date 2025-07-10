@@ -1,7 +1,7 @@
 const letters = ["A", "B", "C", "D"]
-const array1 = ["Apple", true, 1.5]
+const array1 = ["Apple", true, 1.5, [{}]]
 const array2 = []
-const array3 = [...array1] 
+const array3 = ["Apple", true, 1.5, [{}]]
 const array4 = array1.slice() // Returns a copy of a section of the array
 const combined1 = [...array1, ...array2, ...array3, ...array4]
 const combined2 = array1.concat(array4) // Combines two or more arrays
@@ -36,3 +36,34 @@ console.log(array4)
 
 console.log(combined1)
 console.log(combined2)
+
+const areArraysEqual = (arr1, arr2) => {
+    if (arr1.length !== arr2.length)
+        return false
+
+    for (let i = 0; i < arr1.length; i++) {
+        const value1 = arr1[i]
+        const value2 = arr2[i]
+        const areValuesArray = Array.isArray(value1) && Array.isArray(value2) // Array is a global object which has a method isArray.
+
+        if (areValuesArray) {
+            if (!areArraysEqual(value1, value2)) {
+                return false
+            } else {
+                continue
+            }
+        }
+
+        if (typeof value1 === "object" && typeof value2 === "object") {
+            return areArraysEqual(value1, value2)
+        }
+
+        if (value1 !== value2)
+            return false
+
+    }
+
+    return true
+}
+
+console.log(areArraysEqual(array1, array3))
