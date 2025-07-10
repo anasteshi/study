@@ -37,3 +37,8 @@ console.log(Math.floor(32.5)) // 32 – Round down
 console.log(Math.ceil(32.5)) // 33 – Round up
 console.log(Math.trunc(12.7)) // 12
 console.log(Math.trunc(-12.7)) // -12
+
+console.log(Number(number2String)) // NaN
+console.log(+number2String) // Nan 
+console.log(parseInt(number2String)) // 256 
+console.log(parseFloat(number2String)) // 256.5
