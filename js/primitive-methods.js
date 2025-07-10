@@ -42,3 +42,17 @@ console.log(Number(number2String)) // NaN
 console.log(+number2String) // Nan 
 console.log(parseInt(number2String)) // 256 
 console.log(parseFloat(number2String)) // 256.5
+
+
+// Strings
+
+const firstName = "Anastasiia"
+const text = "SoMe teXT"
+
+console.log(firstName.length) // 10
+console.log(firstName[2]) // a
+console.log(firstName.at(-2)) // i
+
+console.log(text.toLowerCase()) // some text
+console.log(text.toUpperCase()) // SOME TEXT
+
