@@ -68,4 +68,9 @@ console.log(message.indexOf("bye")) // -1
 
 console.log(message.includes("open")) // true
 console.log(message.startsWith("ed")) // false
-console.log(message.includes("Are you")) // true
+console.log(message.endsWith("?")) // true
+
+console.log(message.indexOf("open mind", 3)) // 8
+console.log(message.includes("open", 14)) // false – starts from 14th index character
+console.log(message.startsWith("ed", 2)) // false
+console.log(message.endsWith("?", 1)) // false, because the second optional parameter becomes a new ending index
