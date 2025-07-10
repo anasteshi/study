@@ -93,3 +93,11 @@ console.log(message.replace(/a/g, "?"))
 console.log(message.replaceAll(/a/gi, "?")) // ?re you open minded? /a/gi searches for all upperCase and lowerCase A's
 
 console.log(phoneNumber.replace(/\d/g, "#")) // +## # ####-####
+
+console.log(message.split(" ")) // [ 'Are', 'you', 'open', 'minded?' ]
+console.log(message.split("")) /* [
+'A', 'r', 'e', ' ', 'y',
+'o', 'u', ' ', 'o', 'p',
+'e', 'n', ' ', 'm', 'i',
+'n', 'd', 'e', 'd', '?'
+] */
