@@ -51,6 +51,7 @@ const text = "SoMe teXT"
 const textWithSpaces = "   So Many sPACes   "
 const message = "Are you open minded?"
 const string = "JavaScript"
+const phoneNumber = "+81 3 1234-5678"
 
 console.log(firstName.length) // 10
 console.log(firstName[2]) // a
@@ -84,3 +85,11 @@ console.log(string.slice(-6)) // Script
 console.log(string.slice(-6, -3)) // Scr
 
 console.log(string.repeat(3)) // JavaScriptJavaScriptJavaScript
+
+console.log(message.replace("minded", "wallet")) // Are you open wallet?
+console.log(message.replaceAll("o", "#")) // Are y#u #pen minded?
+
+console.log(message.replace(/a/g, "?"))
+console.log(message.replaceAll(/a/gi, "?")) // ?re you open minded? /a/gi searches for all upperCase and lowerCase A's
+
+console.log(phoneNumber.replace(/\d/g, "#")) // +## # ####-####
