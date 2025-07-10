@@ -1,5 +1,6 @@
 const letters = ["A", "B", "C", "D"]
 const array = ["Apple", true, 1.5]
+const message = "One, Two, Three, Four, Five, Six"
 
 letters.push("E", "F") // Adds elements to the end of the array
 console.log(letters) 
@@ -14,3 +15,5 @@ console.log(letters.shift()) // Removes the first element of the array and retur
 console.log(array.toString()) // Converts types to string, separating them by comas
 
 console.log(array.join(", ")) // Does the same thing as toString(), but the separator can be chosen
+
+console.log(message.split(", ").join(", "))
