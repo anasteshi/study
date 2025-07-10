@@ -62,3 +62,10 @@ console.log(textWithSpaces.trim()) // So Many sPACes
 console.log(textWithSpaces.toLowerCase().trim()) // so many spaces
 console.log(textWithSpaces.trimStart()) // 'So Many sPACes   '
 console.log(textWithSpaces.trimEnd()) // '   So Many sPACes'
+
+console.log(message.indexOf("open mind")) // 8
+console.log(message.indexOf("bye")) // -1
+
+console.log(message.includes("open")) // true
+console.log(message.startsWith("ed")) // false
+console.log(message.includes("Are you")) // true
