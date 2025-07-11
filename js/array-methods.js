@@ -75,3 +75,17 @@ console.log(formattedPeople) /*
     'This person is 18 years old and is single'
 ]
 */
+
+// let ageSum = 0
+
+// for (let i = 0; i < people.length; i++) {
+//     ageSum += people[i].age
+// }
+
+// console.log(`Average age is: ${Math.floor(ageSum / people.length)}`)
+
+const ageSum = people.reduce((accumulator, element) => accumulator + element.age, 0) // Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
+
+console.log(`Average age is: ${Math.floor(ageSum / people.length)}`)
+
+people.reduceRight((accumulator, element) => accumulator + element.age, 0) // Same but from right to left
