@@ -89,3 +89,19 @@ const ageSum = people.reduce((accumulator, element) => accumulator + element.age
 console.log(`Average age is: ${Math.floor(ageSum / people.length)}`)
 
 people.reduceRight((accumulator, element) => accumulator + element.age, 0) // Same but from right to left
+
+const reversedPrices = prices.reverse() // Reverses the elements in an array in place. This method mutates the array and returns a reference to the same array.
+
+console.log("Prices: ", prices)
+console.log("Reversed prices: ", reversedPrices)
+
+// To prevent mutation use spread operator
+
+const reversedLetters = [...letters].reverse()
+
+console.log("Letters: ", letters)
+console.log("Reversed letters: ", reversedLetters)
+
+const sortedPrices = [...prices].sort((a, b) => a - b) // Sorts an array in place. This method mutates the array and returns a reference to the same array.
+
+console.log(sortedPrices)
