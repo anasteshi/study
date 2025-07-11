@@ -64,3 +64,5 @@ console.log(people.some((person) => person.age === 34)) // Determines whether th
 console.log(people.every((person) => person.age === 10)) // Determines whether all the members of an array satisfy the specified test.
 
 console.log(people.find((person) => person.status === "Single")) // Returns the value of the first element in the array where predicate is true, and undefined otherwise.
+
+console.log(people.filter((person) => person.status === "Married")) // Returns the elements of an array that meet the condition specified in a callback function.
