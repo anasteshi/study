@@ -55,3 +55,5 @@ console.log(people.indexOf({status: "Married", age: 25})) // DOESN'T work with o
 
 console.log(people.findIndex((person) => person.age === 18)) // Returns the index of the first element in the array where predicate is true
 console.log(people.findLastIndex((person) => person.age === 25)) // Same but from right to left
+
+console.log(prices.includes(22)) // true – also has an optional parameter for starting index
