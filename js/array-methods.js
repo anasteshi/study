@@ -57,3 +57,10 @@ console.log(people.findIndex((person) => person.age === 18)) // Returns the inde
 console.log(people.findLastIndex((person) => person.age === 25)) // Same but from right to left
 
 console.log(prices.includes(22)) // true – also has an optional parameter for starting index
+console.log(people.includes({status: "Married", age: 34})) // DOESN'T work with objects because of their reference-type behavior
+
+console.log(people.some((person) => person.age === 34)) // Determines whether the specified callback function returns true for any element of an array.
+
+console.log(people.every((person) => person.age === 10)) // Determines whether all the members of an array satisfy the specified test.
+
+console.log(people.find((person) => person.status === "Single")) // Returns the value of the first element in the array where predicate is true, and undefined otherwise.
